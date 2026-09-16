@@ -1,7 +1,9 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
-import router from './routes/profileRouter.js'
+import profileRouter from './routes/profileRouter.js'
+import projectRouter from './routes/projectRouter.js'
+
 
 const app = express()
 dotenv.config()
@@ -11,7 +13,9 @@ const port = process.env.PORT
 // app.use(cors)
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(router)
+app.use('/api/profile', profileRouter)
+app.use('/api/project', projectRouter)
+
 
 
 // app.get('/', (req, res) => {
