@@ -3,6 +3,8 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import profileRouter from './routes/profileRouter.js'
 import projectRouter from './routes/projectRouter.js'
+import skillRouter from './routes/skillRouter.js'
+import experienceRouter from './routes/experienceRouter.js'
 
 
 const app = express()
@@ -15,7 +17,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use('/api/profile', profileRouter)
 app.use('/api/project', projectRouter)
-
+app.use('/api/skill', skillRouter)
+app.use('/api/experience', experienceRouter)
 
 
 // app.get('/', (req, res) => {
