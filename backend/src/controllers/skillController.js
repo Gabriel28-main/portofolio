@@ -96,7 +96,8 @@ export const updateSkill = async (req, res) => {
 
         return res.status(200).json({
             success: true,
-            message: `Berhasil mengubah skill dengan id ${id}`,
+            message: `Berhasil mengubah skill dengan id ${id}`, 
+            result: await skillModels.getSkillById(id)
         })
     } catch (error) {
         return res.status(500).json({

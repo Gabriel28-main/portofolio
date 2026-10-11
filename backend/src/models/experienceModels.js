@@ -11,7 +11,7 @@ const getExperiencesById = async (id) => {
 }
 
 const addExperience = async (data) => {
-    const { title, company, location, start_date, end_date, is_current, description } = data
+const { title, company, location, start_date, end_date      , is_current, description } = data
     const [result] = await db.execute(
         'INSERT INTO experiences (title, company, location, start_date, end_date, is_current, description) VALUES (?, ?, ?, ?, ?, ?, ?)', [title, company, location, start_date, end_date, is_current, description]
     )
