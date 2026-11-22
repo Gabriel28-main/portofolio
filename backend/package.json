@@ -1,26 +1,4 @@
 {
-<<<<<<< HEAD
-=======
-  "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "mysql2": "^3.24.3",
-    "nodemon": "^3.1.14"
-  },
->>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-<<<<<<< HEAD
-  "type": "module",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "dotenv": "^18.0.8",
@@ -29,8 +7,17 @@
     "multer": "^2.4.0",
     "mysql2": "^3.24.6",
     "nodemon": "^3.1.14"
-  }
-=======
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "type": "module"
->>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 }

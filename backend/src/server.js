@@ -77,5 +77,4 @@ app.listen(port, () => {
 
     app.listen(port, () => {
     console.log(`wets, jalan jalan ke http://localhost:${port}`)
->>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 })
