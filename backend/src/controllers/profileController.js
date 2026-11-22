@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 import profileModels from "../models/profileModels.js"
+=======
+import { readProfile, changeProfile } from "../models/profileModels.js"
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 
 // 1. Mengambil Data Profil
 export const getProfile = async (req, res) => {
     try {
+<<<<<<< HEAD
         const profile = await profileModels.readProfile()
+=======
+        const profile = await readProfile()
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 
         if (!profile) {
             return res.status(404).json({
@@ -41,7 +49,11 @@ export const updateProfile = async (req, res) => {
             })
         }
 
+<<<<<<< HEAD
         const result = await profileModels.changeProfile(id, data)
+=======
+        const result = await changeProfile(id, data)
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 
         if (result.affectedRows === 0) {
             return res.status(404).json({

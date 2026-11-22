@@ -92,6 +92,7 @@ export const updateExperience = async (req, res) => {
             })
         }
 
+<<<<<<< HEAD
         if (!data.title || !data.company) {
             return res.status(400).json({
                 success: false,
@@ -99,6 +100,8 @@ export const updateExperience = async (req, res) => {
             })
         }
 
+=======
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
         const result = await experienceModels.updateExperience(id, data)
 
         if (result.affectedRows === 0) {

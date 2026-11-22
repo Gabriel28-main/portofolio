@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import db from "../config/db.js"
 
+=======
+import db from "../config/db.js";
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 
 const getAllSkill = async () => {
     const [rows] = await db.query('SELECT * FROM skills ORDER BY category, name')

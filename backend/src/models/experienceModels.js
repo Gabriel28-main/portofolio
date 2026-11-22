@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import db from '../config/db.js'
+=======
+import db from "../config/db.js"
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 
 const getAllExperiences = async () => {
     const [rows] = await db.query('SELECT * FROM experiences')
@@ -11,7 +15,11 @@ const getExperiencesById = async (id) => {
 }
 
 const addExperience = async (data) => {
+<<<<<<< HEAD
 const { title, company, location, start_date, end_date , is_current, description } = data
+=======
+const { title, company, location, start_date, end_date      , is_current, description } = data
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
     const [result] = await db.execute(
         'INSERT INTO experiences (title, company, location, start_date, end_date, is_current, description) VALUES (?, ?, ?, ?, ?, ?, ?)', [title, company, location, start_date, end_date, is_current, description]
     )

@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+=======
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.3",
+    "nodemon": "^3.1.14"
+  },
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
   "name": "backend",
   "version": "1.0.0",
   "description": "",
@@ -9,6 +19,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "module",
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -19,4 +30,7 @@
     "mysql2": "^3.24.6",
     "nodemon": "^3.1.14"
   }
+=======
+  "type": "module"
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 }

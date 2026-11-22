@@ -49,7 +49,11 @@ const createMessage = async (req, res) => {
     try {
         const data = req.body
 
+<<<<<<< HEAD
         if (!data.sender_email || !data.message || !data.sender_name) {
+=======
+        if (!data.sender_email || !data.message) {
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
             return res.status(400).json({
                 success: false,
                 message: 'something is missing lho ya'

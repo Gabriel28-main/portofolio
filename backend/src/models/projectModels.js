@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import db from '../config/db.js'
+=======
+import db from "../config/db.js";
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
 
 export const getAllProjectsModels = async () => {
     const [rows] = await db.query('SELECT * FROM projects ORDER BY created_at DESC')
@@ -30,4 +34,7 @@ export const deleteProjectModels = async (id) => {
     const [result] = await db.execute('DELETE FROM projects WHERE id = ?', [id])
     return result
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f

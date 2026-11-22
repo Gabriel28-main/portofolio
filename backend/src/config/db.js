@@ -23,4 +23,9 @@ pool.getConnection((err, connection) => {
         connection.release()
     }
 })
+<<<<<<< HEAD
 export default db     
+=======
+
+export default db
+>>>>>>> d02ce22dd07233d0aa9656919d61604b56fc4c9f
